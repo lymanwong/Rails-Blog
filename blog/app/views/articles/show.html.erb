@@ -9,6 +9,11 @@
   <%= @article.text %>
 </p>
 
+<p>
+  <strong>Image:</strong><br>
+  <img src = <%= @article.image %> width="500" height="auto">
+</p>
+
 <h2>Comments</h2>
 <%= render @article.comments %>
 
