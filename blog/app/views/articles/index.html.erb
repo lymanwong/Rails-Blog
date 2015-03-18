@@ -1,4 +1,4 @@
-<h1>Listing articles</h1>
+<h1>All my blog posts:</h1>
 
 <table>
   <tr>
@@ -9,11 +9,14 @@
   <% @articles.each do |article| %>
   <tr><ul>
     <td><li><%= article.title %></li></td>
-    <td><%= article.text %></td></ul>
+    <td><%= article.text %></td>
     <td><%= link_to 'Show', article_path(article) %></td>
-      <td><%= link_to 'Edit', edit_article_path(article) %></td>
-  </tr>
-  <% end %>
-</table>
-
-
+    <td><%= link_to 'Edit', edit_article_path(article) %></td>
+    <td><%= link_to 'Destroy', article_path(article),
+      method: :delete,
+      data: { confirm: 'Are you sure?' } %></td>
+    </ul></tr>
+    <% end %>
+  </table>
+  <br>
+  <%= link_to 'New article', new_article_path %>
