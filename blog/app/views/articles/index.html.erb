@@ -11,7 +11,7 @@
   <tr><ul>
     <td><li><%= article.title %></li></td>
     <td><%= article.text %></td>
-    <td><img src=<%= article.text %>height="200" width="auto" ></td>
+    <td><img src=<%= article.image %> height="200" width="auto"></td>
     <td><%= link_to 'Show', article_path(article) %></td>
     <td><%= link_to 'Edit', edit_article_path(article) %></td>
     <td><%= link_to 'Destroy', article_path(article),
@@ -21,4 +21,4 @@
     <% end %>
   </table>
   <br>
-  <%= link_to 'New article', new_article_path %>
+  <%= link_to 'Home', root_path %> | <%= link_to 'New article', new_article_path %>
