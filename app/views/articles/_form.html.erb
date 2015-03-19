@@ -16,17 +16,17 @@
 
 <p>
   <%= f.label :title %><br>
-  <%= f.text_field :title %>
+  <%= f.text_field :title, :placeholder => "Title of your blog post", :size => "30x10" %>
 </p>
 
 <p>
   <%= f.label :text %><br>
-  <%= f.text_area :text %>
+  <%= f.text_area :text, :placeholder => "What do you want to say?", :size => "30x10" %>
 </p>
 
 <p>
-  <%= f.label :image %><br>
-  <%= f.text_area :image %>
+  <%= f.label :Image_Link%><br>
+  <%= f.text_area :image, :placeholder => "Please use a direct link", :size => "30x10"  %>
 </p>
 
 <p>
