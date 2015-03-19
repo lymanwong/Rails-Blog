@@ -4,12 +4,14 @@
   <tr>
     <th>Title</th>
     <th>Text</th>
+    <th>Image</th>
   </tr>
 
   <% @articles.each do |article| %>
   <tr><ul>
     <td><li><%= article.title %></li></td>
     <td><%= article.text %></td>
+    <td><img src=<%= article.text %>height="200" width="auto" ></td>
     <td><%= link_to 'Show', article_path(article) %></td>
     <td><%= link_to 'Edit', edit_article_path(article) %></td>
     <td><%= link_to 'Destroy', article_path(article),
