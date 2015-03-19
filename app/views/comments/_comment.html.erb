@@ -9,7 +9,12 @@
 </p>
 
 <p>
+  <strong>Image:</strong><br>
+  <img src=<%= comment.commenterimage %> height="200" width="auto">
+</p>
+
+<p>
   <%= link_to 'Delete Comment', [comment.article, comment],
-               method: :delete,
-               data: { confirm: 'Are you sure?' } %>
+  method: :delete,
+  data: { confirm: 'Are you sure?' } %>
 </p>
