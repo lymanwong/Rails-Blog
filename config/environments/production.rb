@@ -1,6 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+  config.secret_key_base = "fada64c3f29abcaadef086cd7456bd0cca2c11009983d38526bbda45aed290127b8c844b1eb6b8146367137060ea2ec39980a8c80ec2ec85c08e9a8a2d60edce"
   # Code is not reloaded between requests.
   config.cache_classes = true
 
@@ -66,7 +66,7 @@ Rails.application.configure do
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
-  config.i18n.fallbacks = true
+config.i18n.fallbacks = true
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
