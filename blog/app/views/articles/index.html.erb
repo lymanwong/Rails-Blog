@@ -1,15 +1,17 @@
-<h1>All my blog posts:</h1>
+<h1>All blog posts:</h1>
 
 <table>
   <tr>
     <th>Title</th>
     <th>Text</th>
+    <th>Image</th>
   </tr>
 
   <% @articles.each do |article| %>
   <tr><ul>
     <td><li><%= article.title %></li></td>
     <td><%= article.text %></td>
+    <td><img src = <%= article.image %> width="200" height="auto"></td>
     <td><%= link_to 'Show', article_path(article) %></td>
     <td><%= link_to 'Edit', edit_article_path(article) %></td>
     <td><%= link_to 'Destroy', article_path(article),
