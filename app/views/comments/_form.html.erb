@@ -1,13 +1,17 @@
 <%= form_for([@article, @article.comments.build]) do |f| %>
-  <p>
-    <%= f.label :commenter %><br>
-    <%= f.text_field :commenter %>
-  </p>
-  <p>
-    <%= f.label :body %><br>
-    <%= f.text_area :body %>
-  </p>
-  <p>
-    <%= f.submit %>
-  </p>
+<p>
+  <%= f.label :commenter %><br>
+  <%= f.text_field :commenter, :placeholder => "Your name", :size => "30x10"  %>
+</p>
+<p>
+  <%= f.label :body %><br>
+  <%= f.text_area :body, :placeholder => "What have you got to say?", :size => "30x10"  %>
+</p>
+<p>
+  <%= f.label :Image_Link%><br>
+  <%= f.text_area :commenterimage, :placeholder => "Please use a direct link", :size => "30x10" %>
+</p>
+<p>
+  <%= f.submit %>
+</p>
 <% end %>
