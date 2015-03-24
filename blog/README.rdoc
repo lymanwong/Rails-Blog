@@ -1,1 +1,0 @@
-This is an app made with Rails 4.
