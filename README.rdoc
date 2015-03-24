@@ -1,3 +1,6 @@
-This is an app made with Rails 4.<br><br>
+This is an app made with Rails 4.
 
-You can see it live at: https://lymansblog.herokuapp.com
+You can see the page live at: https://lymansblog.herokuapp.com/
+
+Todo:
+Add styling
